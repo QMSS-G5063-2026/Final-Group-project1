@@ -1,8 +1,6 @@
 streamlit
 pandas
-altair
 plotly
 networkx
-geopandas
-folium
-pydeck
+matplotlib
+seaborn
