@@ -1,17 +1,9 @@
-# -*- coding: utf-8 -*-
-"""section3.ipynb
-
-Original file is located at
-    https://colab.research.google.com/drive/1PX7ucFgnBQMZQh6UV3DaPq8ppOf2EeqL
-"""
-
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
 import shutil
 
-# Ensure the base /mnt/data directory exists
 Path("/mnt/data").mkdir(exist_ok=True)
 
 output_dir = Path("/mnt/data/section3_outputs")
