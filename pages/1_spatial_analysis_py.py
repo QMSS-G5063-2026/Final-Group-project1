@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 
-st.title("Section 1. Spatial Patterns: Where Are the Main Activity Centers?")
+st.title("Spatial Patterns: Where Are the Main Activity Centers?")
 
 st.markdown(
     """
