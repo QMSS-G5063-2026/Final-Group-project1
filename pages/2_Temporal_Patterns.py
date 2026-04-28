@@ -5,7 +5,7 @@ import streamlit as st
 
 sns.set_style("whitegrid")
 
-st.title("Section 2. Temporal Patterns")
+st.title("Temporal Patterns")
 st.write(
     "This page explores when Citi Bike trips are most common across hours, weekdays, and months "
     "using trip data from January to March 2025."
