@@ -329,7 +329,7 @@ with st.expander("Data files used"):
 st.divider()
 
 
-st.subheader("Chart 8. Interactive Station Activity Map")
+st.subheader("Interactive Station Activity Map")
 
 fig8 = px.scatter_mapbox(
     filtered_station_activity,
@@ -349,7 +349,7 @@ fig8 = px.scatter_mapbox(
     size_max=35,
     zoom=map_zoom,
     height=700,
-    title="Chart 8. Interactive Station Activity Map: Jersey City / Hoboken Citi Bike Activity"
+    title="Interactive Station Activity Map: Jersey City / Hoboken Citi Bike Activity"
 )
 
 fig8.update_layout(
