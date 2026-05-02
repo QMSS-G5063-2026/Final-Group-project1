@@ -375,7 +375,7 @@ st.markdown(
 st.divider()
 
 
-st.subheader(f"Chart 9. Top {top_n} Busiest Citi Bike Stations")
+st.subheader(f"Top {top_n} Busiest Citi Bike Stations")
 
 top_stations = (
     filtered_station_activity
@@ -399,7 +399,7 @@ fig9 = px.bar(
         "end_trips": ":,.0f",
         "total_trips": ":,.0f"
     },
-    title=f"Chart 9. Top {top_n} Busiest Citi Bike Stations"
+    title=f"Top {top_n} Busiest Citi Bike Stations"
 )
 
 fig9.update_traces(
@@ -429,7 +429,7 @@ st.markdown(
 st.divider()
 
 
-st.subheader("Chart 10. Area-Level Citi Bike Activity: Jersey City vs Hoboken")
+st.subheader("Area-Level Citi Bike Activity: Jersey City vs Hoboken")
 
 area_activity_sorted = filtered_area_activity.sort_values(
     trip_metric,
@@ -450,7 +450,7 @@ fig10 = px.bar(
         "total_trips": ":,.0f",
         "station_count": ":,.0f"
     },
-    title="Chart 10. Area-Level Citi Bike Activity: Jersey City vs Hoboken"
+    title="Area-Level Citi Bike Activity: Jersey City vs Hoboken"
 )
 
 fig10.update_traces(
@@ -480,7 +480,7 @@ st.markdown(
 st.divider()
 
 
-st.subheader("Chart 11. Weighted Citi Bike Station Activity Hotspot Map")
+st.subheader("Weighted Citi Bike Station Activity Hotspot Map")
 
 fig11 = px.density_mapbox(
     filtered_station_activity,
@@ -494,7 +494,7 @@ fig11 = px.density_mapbox(
     },
     zoom=map_zoom,
     height=700,
-    title="Chart 11. Weighted Citi Bike Station Activity Hotspot Map"
+    title="Weighted Citi Bike Station Activity Hotspot Map"
 )
 
 fig11.update_layout(
@@ -516,7 +516,7 @@ st.markdown(
 st.divider()
 
 
-st.subheader("Chart 12. Citi Bike Station Hotspots by Total Trip Volume")
+st.subheader("Citi Bike Station Hotspots by Total Trip Volume")
 
 hotspot_stations = filtered_station_activity.copy()
 
@@ -550,7 +550,7 @@ fig12 = px.scatter_mapbox(
     size_max=38,
     zoom=map_zoom,
     height=700,
-    title="Chart 12. Citi Bike Station Hotspots by Total Trip Volume"
+    title="Citi Bike Station Hotspots by Total Trip Volume"
 )
 
 fig12.update_layout(
